@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Lab1</title>
+  </head>
+  <body>
+    <div>
+        <table border="1" style="width:500px">
+            <tr>
+                <th colspan="4" bgcolor="red"><h1>Cumparare masina</h1></th>                 
+            </tr>
+
+            <tr>
+                <td colspan="4" bgcolor="green"><h2 align="center" valign="center"> Detalii cumparator </h2></td>
+            </tr>
+
+            <tr>
+                <td>Nume:</td>
+                <td><input type="text"></td>
+                <td>Prenume:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Adresa:</td>
+                <td colspan="3"><input type="text" style="width:100%"></td>                
+            </tr>
+
+            <tr>
+                <td>Oras:</td>
+                <td><input type="text"></td>
+                <td>CNP:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <form>
+                        <input type="radio" name="sex" value="Barbat">Barbat<br>
+                        <input type="radio" name="sex" value="Femeie">Femeie
+                    </form>
+                </td>                
+                <td>Statut:</td>
+                <td>
+                    <select>
+                        <option value="fizica">Persoana Fizica</option>
+                        <option value="juridica">Persoana Juridica</option>                                             
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" bgcolor="green"><h2 align="center" valign="center"> Detalii masina </h2></td>
+            </tr>
+
+            <tr>               
+                <td>Marca:</td>
+                <td>
+                    <select>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Audi">Audi</option>                        
+                    </select>
+                </td>
+                <td>Model:</td>                        
+                <td>
+                    <select>
+                        <option value="320">320</option>
+                        <option value="A-classe">A-classe</option>
+                        <option value="A4">A4</option>                        
+                    </select>
+                </td>                
+            </tr>
+
+            <tr>
+                <td>An:</td>
+                <td><input type="text"></td>
+                <td>Km:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr><td colspan="4"><table style="width:100%">
+                <tr>                    
+                    <td>Combustibil:</td>
+                    <td>
+                        <form>
+                            <input type="radio" name="fuel" value="Benzina">Benzina<br>
+                            <input type="radio" name="fuel" value="Diesel" checked>Diesel
+                        </form>
+                    </td>
+                    <td>Norma poluare:</td>
+                    <td>
+                        <select>
+                            <option value="Euro1">Euro1</option>
+                            <option value="Euro2">Euro2</option>
+                            <option value="Euro3">Euro3</option>
+                            <option value="Euro4">Euro4</option>
+                            <option value="Euro5" disabled>Euro5</option>
+                        </select>
+                    </td>
+                </tr>
+            </table></td></tr>  
+
+            <tr style="height:100px">
+                <td valign="top">Consum:</td>
+                <td>
+                    <ul style="list-style-type:circle">
+                        <li>Mixt: 5 l/100km</li>
+                        <li>Urban: 6 l/100km</li>
+                        <li>Extern: 4 l/100km</li>
+                    </ul>
+                </td>
+                <td colspan="2"><img src="car.jpg" style="width:250px;height:100px;"></td>
+            </tr>
+
+            <tr>
+                <td>Dotari:</td>
+                <td colspan="3">
+                    <ol type="I">
+                        <li>Geamuri electrice</li>
+                        <li>Oglinzi electrice</li>
+                        <li>
+                            Acte:
+                            <ul style="list-style-type:square">
+                                <li>Talon</li>
+                                <li>Asigurare</li>
+                            </ul>
+                        </li>                        
+                    </ol>
+                </td>
+            </tr>    
+
+            <tr>
+                <td>Site producator:</td>
+                <td colspan="3"><a href="http://www.bmw.com/com/en/" target="_blank">www.bmw.com</a></td>
+            </tr>     
+
+            <tr>
+                <td colspan="2">Detalii livrare:</td>     
+                <td colspan="2"><textarea rows=5 cols=30 name="textarea">Detalii...</textarea></td>           
+            </tr>
+
+            <tr>
+                <td colspan="4" align="right"> 
+                    <button type="button">Cumpara</button>
+                </td>
+            </tr>
+
+        </table>    
+    </div>
+  </body>
+</html>
