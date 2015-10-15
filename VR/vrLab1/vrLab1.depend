@@ -1,0 +1,94 @@
+# depslib dependency file v1.0
+1173345396 source:c:\users\paul\documents\school\vr\vrlab1\intersection.cpp
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Line.hpp"
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\intersection.hpp
+	<iostream>
+	"Vector.hpp"
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\vector.hpp
+	<cmath>
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\geometry.hpp
+	"Color.hpp"
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\color.hpp
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\line.hpp
+	"Vector.hpp"
+
+1443712674 source:c:\users\paul\documents\school\vr\vrlab1\sphere.cpp
+	"Sphere.hpp"
+
+1173345396 c:\users\paul\documents\school\vr\vrlab1\sphere.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Color.hpp"
+
+1173345396 source:c:\users\paul\documents\school\school\vr\vrlab1\intersection.cpp
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Line.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\intersection.hpp
+	<iostream>
+	"Vector.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\vector.hpp
+	<cmath>
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\geometry.hpp
+	"Color.hpp"
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\color.hpp
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\line.hpp
+	"Vector.hpp"
+
+1443712703 source:c:\users\paul\documents\school\school\vr\vrlab1\main.cpp
+	<cmath>
+	<iostream>
+	<string>
+	"Vector.hpp"
+	"Line.hpp"
+	"Geometry.hpp"
+	"Sphere.hpp"
+	"Image.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+	"Material.hpp"
+	"Scene.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\sphere.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Intersection.hpp"
+	"Geometry.hpp"
+	"Color.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\image.hpp
+	<iostream>
+	<fstream>
+	"Color.hpp"
+	<string>
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\material.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
+
+1173345396 c:\users\paul\documents\school\school\vr\vrlab1\scene.hpp
+	"Geometry.hpp"
+	"Sphere.hpp"
+
