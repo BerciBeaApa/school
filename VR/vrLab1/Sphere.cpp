@@ -45,11 +45,11 @@ Intersection Sphere::getIntersection(const Line& line,
 
         //Vector vec = new Vector((X0 + Xd * t), (Y0 + Yd * t), (Z0 + Zd * t));
 
-        in = new Intersection(true, *this, line, t);
+        in = Intersection(true, *this, line, t);
     }
     else
     {
-        in = new Intersection(false, *this, line, t);
+        in = Intersection(false, *this, line, t);
     }
 
 

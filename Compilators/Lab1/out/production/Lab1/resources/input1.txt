@@ -1,0 +1,20 @@
+start
+
+declare
+
+    float PI 3.14 |
+    float raza 0.0 |
+    float perimetru 0.0 |
+    float arie 0.0 |
+
+endDeclare
+
+run
+
+    read raza |
+    perimetru = 2 * PI * raza |
+    arie = PI * raza * raza |
+
+endRun
+
+stop

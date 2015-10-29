@@ -65,13 +65,24 @@ int main() {
   Image image(imageWidth, imageHeight);
 
   // ADD CODE HERE
-  Color *c = new Color(255,255,255);
+  Color *c = new Color(0,0,0);
+    Vector orig = Vector(0,0,0);
 
   for(int i=0;i<imageWidth;i++)
   {
 	  for(int j=0;j<imageHeight;j++)
 	  {
-		  image.setPixel(i,j,*c);
+	      Vector point = Vector(imageToViewPlane(i, imageWidth, viewPlaneWidth), imageToViewPlane(j, imageHeight, viewPlaneHeight), viewPlaneDist);
+		  Line ray = Line(Vector(0,0,0), point, true);
+		  Intersection in = findFirstIntersection(ray, 0, 0);
+		  if(in.valid())
+          {
+                image.setPixel(i,j,in.geometry().color());
+          }
+          else
+          {
+                image.setPixel(i,j,*c);
+          }
 	  }
   }
 

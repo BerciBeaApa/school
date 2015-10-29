@@ -1,0 +1,17 @@
+start
+declare
+    int nr 0 |
+    int dummy 0 |
+    int sum 0 |
+endDeclare
+
+run
+    read nr |
+    invarte nr > 0 |
+        read dummy |
+        sum = sum + dummy |
+    endInvarte |
+    write sum |
+endRun
+
+stop

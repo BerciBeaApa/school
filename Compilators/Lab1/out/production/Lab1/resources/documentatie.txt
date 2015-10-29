@@ -1,0 +1,24 @@
+<program> -> "start" "declare" <declaratii variabile> "endDeclare" "run" <corp program> "endRun" "stop"
+
+    <declaratii variabile> -> <tip de date> <lista variabile> <valoare> "|"
+        <tip de date> -> "int"|"float"|"lista<int>"|"lista<float>"
+        <lista variabile> -> id
+        <valoare> -> constanta
+
+    <corp program> -> <instructiune>
+            <instructiune> -> <citire date>|<asignare valori>|<scriere date>|<instructiune conditionala>|<instructiune de ciclare> " |"
+                <citire date> -> "read id"
+                <scriere date> -> "write id"
+                <asignare valori> -> <initializare date>|<operatii cu date>
+                    <initializare date> -> id" = "<expresie>
+                        <expresie> -> id|const
+                    <operatii cu date> -> id <operatie> <asignare valori>
+                        <operatie> -> " + " " - " " * " " / "
+
+                <comparator> -> " == " " > " " < " " != " " <= " " >= "
+                <conditie> -> id <comparator> id
+                <instructiune conditionala> -> " daca " <conditie> " |" <instructiune> " |" altcumva  <instructiune> " |" " endDaca"
+                <instructiune de ciclare> -> "invarte " <conditie> " |" <instructiune> " |" "endInvarte"
+
+
+

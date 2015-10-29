@@ -1,0 +1,1 @@
+start stop declare endDeclare run endRun float int read write invarte endInvarte daca altcumva endDaca = != * + - == > < >= <= |

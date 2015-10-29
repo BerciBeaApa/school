@@ -1,0 +1,25 @@
+start
+
+declare
+
+int a 0.. |
+int b 0 |
+
+endDeclare
+
+run
+
+    read a |
+    read b |
+    invarte a != b |
+        daca a >= b |
+            a = a - b |
+        altcumva
+            b = b - a |
+        endDaca |
+    endInvarte |
+    write a |
+
+endRun
+
+stop
