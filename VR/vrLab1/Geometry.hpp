@@ -1,4 +1,4 @@
-#include "Color.hpp"
+#include "Material.hpp"
 #include "Vector.hpp"
 #include "Line.hpp"
 #include "Intersection.hpp"
@@ -10,27 +10,30 @@ namespace rt {
 
   class Geometry {
   private:
-    Color _color;
+    Material _material;
+    public: Vector _cen;
 
   public:
-    Geometry(const Color& color) {
-      _color = Color(color);
+    Geometry(const Material& material) {
+      _material = Material(material);
     }
 
     Geometry(const Geometry& geometry) {
-      _color = Color(geometry.color());
+      _material = Material(geometry.material());
     }
 
-    virtual Intersection getIntersection(const Line& line, 
+    virtual Intersection getIntersection(const Line& line,
                                          double minDist,
                                          double maxDist) {
       Intersection in(false, *this, line, 0);
       return in;
     };
 
-    inline Color color() const {
-      return _color;
+    inline const Material material() const {
+      return _material;
     }
+
+
   };
 }
 

@@ -40,7 +40,7 @@ Intersection Sphere::getIntersection(const Line& line,
         {
             t1 = (-B + sqrt(delta)) / 2;
             t2 = (-B - sqrt(delta)) / 2;
-            t = t1;
+            t = t2;
         }
 
         //Vector vec = new Vector((X0 + Xd * t), (Y0 + Yd * t), (Z0 + Zd * t));

@@ -44,8 +44,8 @@
 1173341796 c:\users\paul\documents\school\school\vr\vrlab1\vector.hpp
 	<cmath>
 
-1173341796 c:\users\paul\documents\school\school\vr\vrlab1\geometry.hpp
-	"Color.hpp"
+1446132523 c:\users\paul\documents\school\school\vr\vrlab1\geometry.hpp
+	"Material.hpp"
 	"Vector.hpp"
 	"Line.hpp"
 	"Intersection.hpp"
@@ -55,7 +55,7 @@
 1173341796 c:\users\paul\documents\school\school\vr\vrlab1\line.hpp
 	"Vector.hpp"
 
-1446126286 source:c:\users\paul\documents\school\school\vr\vrlab1\main.cpp
+1446133572 source:c:\users\paul\documents\school\school\vr\vrlab1\main.cpp
 	<cmath>
 	<iostream>
 	<string>
@@ -67,9 +67,10 @@
 	"Color.hpp"
 	"Intersection.hpp"
 	"Material.hpp"
+	"Light.hpp"
 	"Scene.hpp"
 
-1173341796 c:\users\paul\documents\school\school\vr\vrlab1\sphere.hpp
+1446133973 c:\users\paul\documents\school\school\vr\vrlab1\sphere.hpp
 	"Vector.hpp"
 	"Line.hpp"
 	"Intersection.hpp"
@@ -82,7 +83,7 @@
 	"Color.hpp"
 	<string>
 
-1173341796 c:\users\paul\documents\school\school\vr\vrlab1\material.hpp
+1446131388 c:\users\paul\documents\school\school\vr\vrlab1\material.hpp
 	"Vector.hpp"
 	"Line.hpp"
 	"Color.hpp"
@@ -92,6 +93,12 @@
 	"Geometry.hpp"
 	"Sphere.hpp"
 
-1446125975 source:c:\users\paul\documents\school\school\vr\vrlab1\sphere.cpp
+1446133810 source:c:\users\paul\documents\school\school\vr\vrlab1\sphere.cpp
 	"Sphere.hpp"
+
+1446132107 c:\users\paul\documents\school\school\vr\vrlab1\light.hpp
+	"Vector.hpp"
+	"Line.hpp"
+	"Color.hpp"
+	"Intersection.hpp"
 

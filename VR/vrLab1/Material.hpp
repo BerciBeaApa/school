@@ -18,6 +18,9 @@ namespace rt {
     double _reflectivity;
 
   public:
+      Material() {
+      }
+
     Material(Color& ambient, Color& diffuse, Color& specular,
              double shininess, double opacity, double reflectivity) {
       _ambient = Color(ambient);
@@ -29,7 +32,7 @@ namespace rt {
       _reflectivity = reflectivity;
     }
 
-    Material(Material& mat) {
+    Material(const Material& mat) {
       _ambient = Color(mat.ambient());
       _diffuse = Color(mat.diffuse());
       _specular = Color(mat.specular());
@@ -39,27 +42,27 @@ namespace rt {
       _reflectivity = mat.reflectivity();
     }
 
-    inline Color& ambient() {
+    inline const Color& ambient() const {
       return _ambient;
     }
 
-    inline Color& diffuse() {
+    inline const Color& diffuse() const {
       return _diffuse;
     }
 
-    inline Color& specular() {
+    inline const Color& specular() const {
       return _specular;
     }
 
-    inline double shininess() {
+    inline double shininess() const {
       return _shininess;
     }
 
-    inline double opacity() {
+    inline double opacity() const {
       return _opacity;
     }
 
-    inline double reflectivity() {
+    inline double reflectivity() const {
       return _reflectivity;
     }
   };

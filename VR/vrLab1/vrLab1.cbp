@@ -37,6 +37,7 @@
 		<Unit filename="Image.hpp" />
 		<Unit filename="Intersection.cpp" />
 		<Unit filename="Intersection.hpp" />
+		<Unit filename="Light.hpp" />
 		<Unit filename="Line.hpp" />
 		<Unit filename="Material.hpp" />
 		<Unit filename="Scene.hpp" />

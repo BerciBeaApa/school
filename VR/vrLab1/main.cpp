@@ -10,6 +10,7 @@
 #include "Color.hpp"
 #include "Intersection.hpp"
 #include "Material.hpp"
+#include "Light.hpp"
 
 #include "Scene.hpp"
 
@@ -67,17 +68,37 @@ int main() {
   // ADD CODE HERE
   Color *c = new Color(0,0,0);
     Vector orig = Vector(0,0,0);
+    Vector L = Vector(-100, 20, 50);
+    Light* li = new Light(*(new Color(1,1,1)), *(new Color(1,1,1)), *(new Color(1,1,1)), 1.5);
 
   for(int i=0;i<imageWidth;i++)
   {
 	  for(int j=0;j<imageHeight;j++)
 	  {
 	      Vector point = Vector(imageToViewPlane(i, imageWidth, viewPlaneWidth), imageToViewPlane(j, imageHeight, viewPlaneHeight), viewPlaneDist);
-		  Line ray = Line(Vector(0,0,0), point, true);
+		  Line ray = Line(orig, point, true);
 		  Intersection in = findFirstIntersection(ray, 0, 0);
 		  if(in.valid())
           {
-                image.setPixel(i,j,in.geometry().color());
+                Vector N = in.vec() - in.geometry()._cen;
+                N.normalize();
+                Vector T = L - in.vec();
+                T.normalize();
+                Vector E = viewPoint - in.vec();
+                E.normalize();
+                Color col = in.geometry().material().ambient()*li->ambient();
+                Vector R = N*(N*T)*2 - T;
+                R.normalize();
+                if(N*T > 0)
+                {
+                    col += in.geometry().material().diffuse()*li->diffuse()*(N*T);
+                }
+                if(E*R > 0)
+                {
+                    col += in.geometry().material().specular()*li->specular()*pow(E*R, in.geometry().material().shininess());
+                }
+                col *= li->intensity();
+                image.setPixel(i,j,col);
           }
           else
           {
