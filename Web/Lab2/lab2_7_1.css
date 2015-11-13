@@ -1,0 +1,28 @@
+body {
+	margin: 0; 
+}
+
+.container {
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.container .header {
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.container .sidetext {	
+
+	width: 20%;	
+	color: #888888;
+	text-align: right;
+	margin: 2px;	
+}
+
+.container .maintext {		
+	width: 100%;
+}

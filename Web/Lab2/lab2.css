@@ -1,57 +1,56 @@
 html, body {    		
-    		margin: 0; 			
+	margin: 0; 	
+	min-height: 100%;	
+	position: relative;	
 }
 
 div {
 	display: block;
 }
 
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: red;
+}
+
 .container {
+	height: 100%;
+	min-height: calc(100% - 100px - 60px);
+}
+
+.container div{
+	float: left;
 	min-height: 100%;
 }
 
-.Header {
-	position: relative;
-	top: 0px;
-	right: 0px;
-	height: 100px;
-	background-color: red;
-	z-index: 10;
-}
-
-.Footer {
-	height: 60px;
-	width: 100%;
-	position: relative;
-	bottom: 0px;
-	background-color: pink;
-}
-
-.MainView {
-	position: relative;
-	left: 0px;
-	right: 0px;	
-	min-height: 100%;	
-	background-color: green;
-}
-
-.TextInside {
-	padding-left: 150px;
-}
-
-.Menu {
-	position: relative;	
-	left: 0px;
-	bottom: 0px;
-	width: 150px;	
+.container .menu {
+	width: 150px;
 	background-color: yellow;
 }	
 
-.Menu ul {
-	list-style-type: none;
-	margin: 0px;
+.container .main {
+	width: calc(100% - 150px);
+	background-color: green;
 }
 
-.Menu li {
+.container .clear {
+	clear: left;
+}
+
+.footer {
+	height: 60px;
+	width: 100%;
+	background-color: pink;
+}
+
+
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.menu li {
 	height: 25px;	
 }

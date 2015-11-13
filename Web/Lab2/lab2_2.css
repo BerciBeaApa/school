@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main.content {
+  flex: 1;
+}
+
+header {
+	height: 100px;
+	background-color: red;
+}
+
+main {
+    position: relative;
+	background-color: green;
+}
+
+main div.sidebar-menu {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+
+	width: 150px;
+	background-color: yellow;
+}
+
+main div.sidebar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+main div.sidebar-menu ul li {
+	height: 25px;
+	padding-left: 40px;
+	border: 1px solid black;	
+}
+
+main div.view {
+	width: calc(100% - 150px);
+	margin-left: 150px; 
+}
+
+footer {
+	height: 60px;
+	background-color: pink;
+}
